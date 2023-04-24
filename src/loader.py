@@ -5,6 +5,11 @@ import numpy as np
 import pandas as pd
 from datetime import timedelta, datetime
 
+"""
+From Assignment 1
+Based off code handed out for Assignment 1
+"""
+
 
 class Loader:
     CONTENT_ROOT = ''
@@ -245,7 +250,8 @@ class Loader:
         print("Saving data!")
         new_df.to_csv(os.path.join(PATH, 'merged_data_labeled.csv'), index=False)
 
+
 if __name__ == "__main__":
     pp = Loader()
-    pp.CONTENT_ROOT = ''
+    pp.CONTENT_ROOT = ''  # set this to the directory of the dataset
     pp.reset_dataset()
